@@ -24,12 +24,6 @@ type Intro = {
   role?: string;
 };
 
-type NavItem = {
-  icon: string;
-  text: string;
-  ref: string;
-};
-
 export const NavData = {
   navItems: [
     { icon: "💻", text: "Projects", ref: "#projects" },
@@ -53,13 +47,14 @@ export const ProjectData: Section = {
   cards: [
     {
       title: "Sneaker Street",
-      description: "This is a project I worked on",
+      description:
+        "Sneaker Street is an e-commerce platform intended on helping users to easily purchase sneakers.",
       image:
         "https://utfs.io/f/e5eed4b9-6b55-4ba9-ad70-0ce36cc65568-28jlz8.png",
       buttons: [
         {
           buttonText: "View Code",
-          buttonLink: "https://github.com",
+          buttonLink: "https://github.com/macintushar/SneakerStore",
           buttonImage: "https://cdn.simpleicons.org/github/black/white",
           buttonHasImage: true,
         },
@@ -67,6 +62,20 @@ export const ProjectData: Section = {
           buttonText: "Demo",
           buttonLink: "https://sneaker-street-demo.netlify.app/",
           buttonImage: "https://cdn.simpleicons.org/netlify/black/white",
+          buttonHasImage: true,
+        },
+      ],
+    },
+    {
+      title: "SPKR - Voice Keyboard",
+      description:
+        "SPKR is an android keyboard app that helps users speak into their keyboards in any language and translates that text into any other language to be inputted into any app.",
+      image: "https://utfs.io/f/94b46082-327a-43b3-9c93-327a45638769-1ip38.png",
+      buttons: [
+        {
+          buttonText: "View Code",
+          buttonLink: "https://github.com/macintushar/SPKR-Voice-Keyboard",
+          buttonImage: "https://cdn.simpleicons.org/github/black/white",
           buttonHasImage: true,
         },
       ],
