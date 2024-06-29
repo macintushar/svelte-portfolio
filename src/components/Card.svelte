@@ -8,7 +8,7 @@
 </script>
 
 <div
-  class="group delay-150 hover:delay-300 bg-black dark:bg-white text-white dark:text-black rounded-[30px] overflow-clip h-[250px] max-w-[350px] min-w-[250px] relative z-0 flex"
+  class="group delay-150 hover:delay-300 text-white dark:text-black rounded-[30px] overflow-clip h-[250px] max-w-[350px] min-w-[250px] relative z-0 flex"
 >
   <img
     src={imageURL}
@@ -16,10 +16,12 @@
     class="group-hover:invisible h-[250px] w-[350px]"
   />
   <div
-    class="absolute inset-0 flex flex-col justify-center items-center z-10 group-hover:visible invisible"
+    class="absolute bg-black dark:bg-white inset-0 flex flex-col justify-center items-center z-10 group-hover:visible invisible gap-3 p-3"
   >
-    <h3 class="text-xl font-semibold text-center">{cardTitle}</h3>
-    <p>{cardDescription}</p>
+    <div>
+      <h3 class="text-xl font-semibold text-center">{cardTitle}</h3>
+      <p class="text-center">{cardDescription}</p>
+    </div>
     <div class="flex flex-row gap-3">
       {#each cardButtons as button}
         <Button props={button} />
