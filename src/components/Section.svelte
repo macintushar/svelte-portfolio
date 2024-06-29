@@ -3,7 +3,7 @@
   export let subtitle: string = "Subtitle";
 </script>
 
-<div class="container mx-auto mt-20 max-w-7xl p-2">
+<div class="container mx-auto max-w-7xl">
   <header class="flex flex-col">
     <h1 class="text-3xl my-2 font-semibold text-black dark:text-white">
       {title}

@@ -24,8 +24,25 @@ type Intro = {
   role?: string;
 };
 
+type NavItem = {
+  icon: string;
+  text: string;
+  ref: string;
+};
+
+export const NavData = {
+  navItems: [
+    { icon: "💻", text: "Projects", ref: "#projects" },
+    { icon: "✍️", text: "Blog", ref: "#blog" },
+    { icon: "🎙️", text: "Podcast", ref: "#pod" },
+    { icon: "✉️️", text: "Contact Me", ref: "#contact" },
+    { icon: "📄", text: "Resume", ref: "" },
+  ],
+  title: "Tushar Selvakumar",
+};
+
 export const Intro: Intro = {
-  image: "https://www.w3schools.com/w3images/avatar_g2.jpg",
+  image: "https://avatars.githubusercontent.com/u/54372016?v=4",
   company: "Multiwoven",
   role: "SDE Intern",
 };
@@ -35,21 +52,22 @@ export const ProjectData: Section = {
   subtitle: "Here's a few Projects I've worked on over the years",
   cards: [
     {
-      title: "Project 1",
+      title: "Sneaker Street",
       description: "This is a project I worked on",
-      image: "SneakerStreet.png",
+      image:
+        "https://utfs.io/f/e5eed4b9-6b55-4ba9-ad70-0ce36cc65568-28jlz8.png",
       buttons: [
         {
           buttonText: "View Code",
           buttonLink: "https://github.com",
-          buttonImage: "https://www.w3schools.com/w3images/avatar_g2.jpg",
+          buttonImage: "https://cdn.simpleicons.org/github/black/white",
           buttonHasImage: true,
         },
         {
           buttonText: "Demo",
           buttonLink: "https://sneaker-street-demo.netlify.app/",
-          // buttonImage: "https://www.w3schools.com/w3images/avatar_g2.jpg",
-          buttonHasImage: false,
+          buttonImage: "https://cdn.simpleicons.org/netlify/black/white",
+          buttonHasImage: true,
         },
       ],
     },
@@ -69,14 +87,30 @@ export const BlogData: Section = {
         {
           buttonText: "View Post",
           buttonLink: "https://github.com",
-          buttonHasImage: false,
+          buttonHasImage: true,
+          buttonImage: "https://cdn.simpleicons.org/medium/black/white",
         },
       ],
     },
   ],
 };
 
-export const PodcastData: Section = {
-  title: "🎙️ Podcast",
-  subtitle: "Check out my podcast about tech and stuff",
+export const PodcastData = {
+  sectionData: {
+    title: "🎙️ Podcast",
+    subtitle: "Check out my podcast about tech and stuff",
+  },
+  ctaLink: "https://podcasters.spotify.com/pod/show/boredkid",
+  ctaImage: "https://cdn.simpleicons.org/podcastindex/black/white",
+  ctaText: "Check out all the other episodes",
+};
+
+export const ContactData = {
+  sectionData: {
+    title: "✉️️ Contact Me",
+    subtitle:
+      "I’m always trying to do some interesting work so if you are doing something that’s interesting, drop me an email or get in touch with me through my socials.",
+  },
+  ctaLink: "",
+  ctaText: "Say Hi! 👋",
 };

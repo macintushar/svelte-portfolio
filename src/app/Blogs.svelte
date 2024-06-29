@@ -7,10 +7,10 @@
 <Section title={BlogData.title} subtitle={BlogData.subtitle}>
   <div
     slot="body"
-    class="flex gap-2 md:justify-around md:flex-row flex-col mt-4"
+    class="flex gap-2 justify-center md:justify-around md:flex-row flex-col mt-4"
   >
     {#if BlogData.cards}
-      {#each BlogData.cards as blog, index}
+      {#each BlogData.cards as blog}
         <Card
           imageURL={blog.image}
           cardTitle={blog.title}
