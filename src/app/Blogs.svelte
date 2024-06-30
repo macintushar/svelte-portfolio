@@ -4,7 +4,7 @@
   import { BlogData } from "@/data/index";
 </script>
 
-<Section title={BlogData.title} subtitle={BlogData.subtitle}>
+<Section title={BlogData.title} subtitle={BlogData.subtitle} id="blog">
   <div
     slot="body"
     class="flex gap-2 justify-center md:justify-around md:flex-row flex-col mt-4"

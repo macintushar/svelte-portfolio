@@ -7,6 +7,7 @@
 <Section
   title={PodcastData.sectionData.title}
   subtitle={PodcastData.sectionData.subtitle}
+  id="pod"
 >
   <div slot="body" class="flex flex-col items-center gap-5 mt-4">
     <iframe

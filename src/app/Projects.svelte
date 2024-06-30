@@ -4,7 +4,11 @@
   import { ProjectData } from "@/data/index";
 </script>
 
-<Section title={ProjectData.title} subtitle={ProjectData.subtitle}>
+<Section
+  title={ProjectData.title}
+  subtitle={ProjectData.subtitle}
+  id="projects"
+>
   <div
     slot="body"
     class="flex gap-2 sm:justify-around flex-col sm:flex-row space-y-3 sm:space-y-0 mt-4"

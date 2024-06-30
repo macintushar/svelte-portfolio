@@ -30,15 +30,19 @@ export const NavData = {
     { icon: "✍️", text: "Blog", ref: "#blog" },
     { icon: "🎙️", text: "Podcast", ref: "#pod" },
     { icon: "✉️️", text: "Contact Me", ref: "#contact" },
-    { icon: "📄", text: "Resume", ref: "" },
+    {
+      icon: "📄",
+      text: "Resume",
+      ref: "https://utfs.io/f/0d4f4098-25c4-4d6d-9200-4b49c61246c4-3olpfc.pdf",
+    },
   ],
   title: "Tushar Selvakumar",
 };
 
 export const Intro: Intro = {
   image: "https://avatars.githubusercontent.com/u/54372016?v=4",
-  company: "Multiwoven",
-  role: "SDE Intern",
+  company: "AI Squared",
+  role: "Software Engineer (SDE-1)",
 };
 
 export const ProjectData: Section = {
@@ -95,7 +99,8 @@ export const BlogData: Section = {
       buttons: [
         {
           buttonText: "View Post",
-          buttonLink: "https://github.com",
+          buttonLink:
+            "https://medium.com/@macintushar/how-to-setup-github-ssh-on-ubuntu-a0ece1587780",
           buttonHasImage: true,
           buttonImage: "https://cdn.simpleicons.org/medium/black/white",
         },
@@ -120,6 +125,6 @@ export const ContactData = {
     subtitle:
       "I’m always trying to do some interesting work so if you are doing something that’s interesting, drop me an email or get in touch with me through my socials.",
   },
-  ctaLink: "",
+  ctaLink: "mailto:tusharkumar91111@gmail.com",
   ctaText: "Say Hi! 👋",
 };

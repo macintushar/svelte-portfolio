@@ -6,6 +6,7 @@
 <Section
   title={ContactData.sectionData.title}
   subtitle={ContactData.sectionData.subtitle}
+  id="contact"
 >
   <div slot="body" class="mt-4 flex justify-center mb-16 sm:mb-32">
     <a href={ContactData.ctaLink} target="_blank" rel="noopener noreferrer">
