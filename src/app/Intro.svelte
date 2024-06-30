@@ -17,6 +17,13 @@
         currently working at <b>{Intro.company || "Somewhere"}</b> as a
         <b>{Intro.role || "Something"}</b>.
       </h2>
+      <div class="flex gap-3 justify-center sm:justify-start">
+        {#each Intro.socials as social}
+          <a href={social.link}>
+            <img src={social.icon} class="h-8" alt={social.name} />
+          </a>
+        {/each}
+      </div>
     </div>
   </div>
   <div class="md:w-1/3 flex justify-center items-center p-2">

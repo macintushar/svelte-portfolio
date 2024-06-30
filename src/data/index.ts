@@ -18,10 +18,17 @@ type Section = {
   cards?: Card[];
 };
 
+type Social = {
+  name: string;
+  icon: string;
+  link: string;
+};
+
 type Intro = {
   image: string;
   company?: string;
   role?: string;
+  socials: Social[];
 };
 
 export const NavData = {
@@ -43,6 +50,33 @@ export const Intro: Intro = {
   image: "https://avatars.githubusercontent.com/u/54372016?v=4",
   company: "AI Squared",
   role: "Software Engineer (SDE-1)",
+  socials: [
+    {
+      name: "GitHub",
+      icon: "https://cdn.simpleicons.org/github/black/white",
+      link: "https://github.com/macintushar",
+    },
+    {
+      name: "LinkedIn",
+      icon: "https://cdn.simpleicons.org/linkedin/black/white",
+      link: "https://www.linkedin.com/in/tushar-selvakumar/",
+    },
+    {
+      name: "X",
+      icon: "https://cdn.simpleicons.org/x/black/white",
+      link: "https://x.com/macintushar",
+    },
+    {
+      name: "Medium",
+      icon: "https://cdn.simpleicons.org/medium/black/white",
+      link: "https://medium.com/@macintushar",
+    },
+    {
+      name: "OpenAI GPT",
+      icon: "https://cdn.simpleicons.org/openai/black/white",
+      link: "https://chatgpt.com/g/g-OWqxZKBAx-tsgpt",
+    },
+  ],
 };
 
 export const ProjectData: Section = {
